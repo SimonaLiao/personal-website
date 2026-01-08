@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Graduated from University of Washington with a Masters in Computer Science! :graduate:
+Graduated from University of Washington with a Masters in Computer Science! :purple_heart:
