@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Side Quests
-permalink: /side-quests/
+title: Projects
+permalink:
 description: Side quests to explore in my life.
 nav: false
 nav_order: 3

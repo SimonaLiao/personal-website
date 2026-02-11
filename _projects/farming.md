@@ -2,6 +2,7 @@
 layout: page
 title: Farming
 permalink: /sidequests/farming/
+nav: false
 #description: with background image
 #img: assets/img/12.jpg
 #importance: 1
@@ -9,11 +10,11 @@ permalink: /sidequests/farming/
 #related_publications: false
 ---
 
-I was raised by farmers' kids. Both my parents are from rural villages in China (one Southern and one Northern), and growing up I visited my grandparents in the villages regularly. Though I was born and raised in a big city like Beijing, I was also raised with farmers' mindsets: never waste food as an appreciation for farmers' hard labor and the land. 
+I was raised by farmers' kids. Both my parents are from rural villages in China, and growing up I visited my grandparents in the villages regularly. Though I was born and raised in a big city like Beijing, I inherited the farmers' mindsets: never waste food as an appreciation for farmers' hard labor and the land. 
 
-During Fall 2023, I took the urban farming course at University of Washington offered by the department of Landscape Architecture to first really learn how to farm and learn about . As part of the course, I volunteered at the [UW Farm](https://botanicgardens.uw.edu/center-for-urban-horticulture/gardens/uw-farm/). After graduating from UW and started working at Microsoft, I missed the farm life and started volunteering at the UW Farm again.
+During Fall 2023, I took the urban farming course at University of Washington offered by the department of Landscape Architecture to first really learn about farming systematically and the science behind it. As part of the course, I volunteered at the [UW Farm](https://botanicgardens.uw.edu/center-for-urban-horticulture/gardens/uw-farm/). After graduating from UW and started working at Microsoft, I missed the farm life and started volunteering at the UW Farm again.
 
-Farming helps me restructure my relationship with the food I consume everyday and reconnect me back to the soil/dirt, insects, plants --- which are the land that I stood upon and feed me. It also brings me back to my childhood memories --- during holidays. Living in a high speed, high technology, capitalistic world where labor is highly specialized, there is some unique and therapeutic pleasure of growing the food you eat and sustain oneself. (Interestingly, talking to the UW farm staff, they told me MANY farming volunteers are Computer Science majors. Maybe they found the same pleasure as I did.)
+Farming helps me restructure my relationship with the food I consume everyday and reconnect me back to the soil/dirt, insects, plants --- which together makes up the land that I stand upon and feed me. It also brings me back to my childhood memories --- during holidays, I lived in rural China and helped with very light farm work. Living in a high speed, high technology, capitalistic world where labor is highly specialized, there is some unique and therapeutic pleasure of growing the food you eat and sustain oneself. (Interestingly, talking to the UW farm staff, they told me MANY farming volunteers are Computer Science majors. Maybe they found the same pleasure as I did.)
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -47,7 +48,7 @@ While harvesting is always fun and joyful, you really learn the "behind the scen
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/farm/Land.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-<div>
+</div>
 <div class="caption">
     Ending the harvest season in 2025 and entering winter. We prepared the land for cover crops.
 </div>

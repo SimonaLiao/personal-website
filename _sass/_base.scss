@@ -415,23 +415,23 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 2.5rem;
 
     a {
       img {
-        width: 3.2rem;
-        height: 3.2rem;
-        margin-bottom: 1rem;
+        width: 2rem;
+        height: 2rem;
+        margin-bottom: 0.5rem;
       }
 
       svg {
-        width: 3.5rem;
-        height: 4rem;
-        margin-bottom: 0.5rem;
+        width: 2.2rem;
+        height: 2.5rem;
+        margin-bottom: 0.3rem;
 
         image {
-          width: 3.5rem;
-          height: 3.5rem;
+          width: 2.2rem;
+          height: 2.2rem;
         }
       }
 
@@ -487,34 +487,38 @@ ul.task-list input[type="checkbox"] {
 
 // Footer
 footer.fixed-bottom {
-  background-color: var(--global-footer-bg-color);
-  font-size: 0.75rem;
+  background-color: var(--global-bg-color);
+  font-size: 0.7rem;
 
   .container {
-    color: var(--global-footer-text-color);
-    padding-top: 9px;
-    padding-bottom: 8px;
+    color: var(--global-text-color);
+    padding-top: 6px;
+    padding-bottom: 6px;
     text-align: center;
+    line-height: 1.2;
   }
 
   a {
-    color: var(--global-footer-link-color);
+    color: var(--global-theme-color);
 
     &:hover {
-      color: var(--global-theme-color);
+      color: var(--global-hover-color);
       text-decoration: none;
     }
   }
 }
 
 footer.sticky-bottom {
+  background-color: var(--global-bg-color);
   border-top: 1px solid var(--global-divider-color);
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 0.9rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 0.8rem;
 
   .container {
     text-align: center;
+    color: var(--global-text-color);
+    line-height: 1.25;
   }
 }
 

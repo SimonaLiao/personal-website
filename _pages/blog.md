@@ -1,9 +1,9 @@
 ---
 layout: default
-permalink: /blog/
-title: blog
-nav: false
-nav_order: 1
+permalink: /projects/
+title: projects
+nav: true
+nav_order: 4
 pagination:
   enabled: true
   collection: posts
@@ -76,15 +76,17 @@ pagination:
 <h3 class="card-title text-lowercase">{{ post.title }}</h3>
 <p class="card-text">{{ post.description }}</p>
 
+                    {% comment %}
                     {% if post.external_source == blank %}
                       {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
                     {% else %}
                       {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
                     {% endif %}
+                    {% endcomment %}
                     {% assign year = post.date | date: "%Y" %}
 
                     <p class="post-meta">
-                      {{ read_time }} min read &nbsp; &middot; &nbsp;
+                      {% comment %} {{ read_time }} min read &nbsp; &middot; &nbsp; {% endcomment %}
                       <a href="{{ year | prepend: '/blog/' | relative_url }}">
                         <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
                     </p>
@@ -111,11 +113,13 @@ pagination:
 
     {% for post in postlist %}
 
+    {% comment %}
     {% if post.external_source == blank %}
       {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
     {% else %}
       {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
     {% endif %}
+    {% endcomment %}
     {% assign year = post.date | date: "%Y" %}
     {% assign tags = post.tags | join: "" %}
     {% assign categories = post.categories | join: "" %}
@@ -125,7 +129,7 @@ pagination:
 {% if post.thumbnail %}
 
 <div class="row">
-          <div class="col-sm-9">
+          <div class="col-sm-6">
 {% endif %}
         <h3>
         {% if post.redirect == blank %}
@@ -141,7 +145,7 @@ pagination:
       </h3>
       <p>{{ post.description }}</p>
       <p class="post-meta">
-        {{ read_time }} min read &nbsp; &middot; &nbsp;
+        {% comment %} {{ read_time }} min read &nbsp; &middot; &nbsp; {% endcomment %}
         {{ post.date | date: '%B %d, %Y' }}
         {% if post.external_source %}
         &nbsp; &middot; &nbsp; {{ post.external_source }}
@@ -178,8 +182,8 @@ pagination:
 
 </div>
 
-  <div class="col-sm-3">
-    <img class="card-img" src="{{ post.thumbnail | relative_url }}" style="object-fit: cover; height: 90%" alt="image">
+  <div class="col-sm-6">
+    <img class="card-img" src="{{ post.thumbnail | relative_url }}" style="object-fit: cover; height: 100%" alt="image">
   </div>
 </div>
 {% endif %}
